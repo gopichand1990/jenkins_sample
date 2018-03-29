@@ -1,6 +1,9 @@
 ---
  - name: TO create user with userid
    hosts: localhost
+   become: yes
+   become_user: root
+   become_method: su
    tasks:
      - name: To create user
        user:
