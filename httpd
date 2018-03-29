@@ -2,6 +2,7 @@
  - name: to install httpd
    hosts: localhost
    tasks:
-   yum: 
-     name: httpd
-     state: latest
+     - name: To install httpd package
+       yum: 
+         name: httpd
+         state: latest
