@@ -1,13 +1,10 @@
 ---
- - name: TO create user with userid
+ - name: TO install package
    hosts: localhost
-   become: yes
-   become_user: root
-   become_method: su
    tasks:
-     - name: To create user
-       user:
-         name: Dhanya.m
-         comment: Employee
-         uid: 5671
+     - name: to install httpd package
+       apt:
+         name: httpd
+         state: latest
+~                          
          
