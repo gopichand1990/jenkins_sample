@@ -2,8 +2,8 @@
  - name: TO install package
    hosts: localhost
    tasks:
-     - name: to install apach2 package
+     - name: to install httpd package
        apt:
-         name: apache2
+         name: mini-httpd
          state: latest                      
          
