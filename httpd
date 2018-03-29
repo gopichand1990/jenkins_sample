@@ -1,9 +1,0 @@
-
----
- - name: to install httpd
-   hosts: localhost
-   tasks:
-     - name: to install httpd
-       yum: 
-         name: httpd
-         state: latest
