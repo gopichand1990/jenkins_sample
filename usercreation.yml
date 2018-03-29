@@ -5,6 +5,5 @@
      - name: to install httpd package
        apt:
          name: httpd
-         state: latest
-~                          
+         state: latest                      
          
