@@ -11,6 +11,7 @@
 ---
  - name: TO enable firewalld service
    hosts: localhost
+   become_user: root
    tasks:
      - name: to enable firewalld service
        service:
