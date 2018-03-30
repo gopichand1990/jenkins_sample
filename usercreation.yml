@@ -1,9 +1,20 @@
+#---
+ #- name: TO install package
+  # hosts: localhost
+   #tasks:
+     #- name: to install httpd package
+      # apt:
+       #  name: mini-httpd
+        # state: latest 
+         
+         
 ---
- - name: TO install package
+ - name: TO enable firewalld service
    hosts: localhost
    tasks:
-     - name: to install httpd package
-       apt:
-         name: mini-httpd
-         state: latest                      
-         
+     - name: to enable firewalld service
+       service:
+         name: firewalld
+         state: started
+         enabled: yes
+
