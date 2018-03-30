@@ -15,6 +15,6 @@
      - name: to enable firewalld service
        service:
          name: firewalld
-         state: started
+         state: restarted
          enabled: yes
 
